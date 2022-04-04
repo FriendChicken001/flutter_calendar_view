@@ -261,6 +261,7 @@ class MonthViewState<T> extends State<MonthView<T>> {
             ),
             Expanded(
               child: PageView.builder(
+                scrollDirection: Axis.vertical,
                 controller: _pageController,
                 onPageChanged: _onPageChange,
                 itemBuilder: (_, index) {
